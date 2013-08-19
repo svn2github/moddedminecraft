@@ -1,0 +1,118 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 13/05/13 06:13
+Description: Rendering screen
+
+java.util.zip.ZipError: jzentry == 0,
+ jzfile = 853736752,
+ total = 1690,
+ name = C:\Users\Michael\AppData\Roaming\.minecraft\instances\#151 Modded Port\minecraft\texturepacks\Soartex_Fanver.zip,
+ i = 1,
+ message = null
+	at java.util.zip.ZipFile$1.nextElement(Unknown Source)
+	at java.util.zip.ZipFile$1.nextElement(Unknown Source)
+	at net.minecraft.client.texturepacks.TexturePackCustom.func_94179_g(SourceFile:63)
+	at net.minecraft.client.texturepacks.GuiTexturePackSlot.func_77214_a(SourceFile:187)
+	at net.minecraft.client.gui.GuiSlot.func_77211_a(GuiSlot.java:376)
+	at net.minecraft.client.texturepacks.GuiTexturePacks.func_73863_a(SourceFile:109)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1155)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:870)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:759)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.zip.ZipFile$1.nextElement(Unknown Source)
+	at java.util.zip.ZipFile$1.nextElement(Unknown Source)
+	at net.minecraft.client.texturepacks.TexturePackCustom.func_94179_g(SourceFile:63)
+	at net.minecraft.client.texturepacks.GuiTexturePackSlot.func_77214_a(SourceFile:187)
+	at net.minecraft.client.gui.GuiSlot.func_77211_a(GuiSlot.java:376)
+	at net.minecraft.client.texturepacks.GuiTexturePacks.func_73863_a(SourceFile:109)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.texturepacks.GuiTexturePacks
+	Mouse location: Scaled: (352, 0). Absolute: (704, 1000)
+	Screen size: Scaled: (427, 501). Absolute: (854, 1001). Scale factor of 2
+Stacktrace:
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1155)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:870)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:759)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_21, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 573324680 bytes (546 MB) / 1364852736 bytes (1301 MB) up to 5726666752 bytes (5461 MB)
+	JVM Flags: 2 total; -Xms1024m -Xmx6144m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 63
+	FML: MCP v7.51 FML v5.2.5.689 Minecraft Forge 7.8.0.689 Optifine OptiFine_1.5.2_HD_U_D2 52 mods loaded, 52 mods active
+	mcp{7.44} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	FML{5.2.5.689} [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	Forge{7.8.0.689} [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	CodeChickenCore{0.8.6.5} [CodeChicken Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	CoFHCore{1.5.2.0} [CoFH Core] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	NotEnoughItems{1.5.2.12} [Not Enough Items] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	CoFHNetwork{1.5.2.0} [CoFHNetwork] (CoFHCore-1.5.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	CoFHWorld{1.5.2.0} [CoFHWorld] (CoFHCore-1.5.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	mod_ReiMinimap{v3.3_06 [1.5.2]} [mod_ReiMinimap] ([1.5.2]ReiMinimap_v3.3_06.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BuildCraft|Core{3.5.3} [BuildCraft] (buildcraft-A-3.5.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BuildCraft|Transport{3.5.3} [BC Transport] (buildcraft-A-3.5.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BuildCraft|Silicon{3.5.3} [BC Silicon] (buildcraft-A-3.5.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	ThermalExpansion{2.4.1.0} [Thermal Expansion] (ThermalExpansion-2.4.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	IC2{1.115.309-lf} [IndustrialCraft 2] (industrialcraft-2_1.115.309-lf.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	AppliedEnergistics{rv.10.m} [Applied Energistics] (appeng-rv10-m.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BiblioCraft{1.2.0} [BiblioCraft] (BiblioCraft[v1.2.0].zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BuildCraft|Builders{3.5.3} [BC Builders] (buildcraft-A-3.5.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BuildCraft|Energy{3.5.3} [BC Energy] (buildcraft-A-3.5.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BuildCraft|Factory{3.5.3} [BC Factory] (buildcraft-A-3.5.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	ChargePads{2.7.0} [Charge Pads] (chargepads-1.5.2-universal-2.7.0.86.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	ChickenChunks{1.3.2.6} [ChickenChunks] (ChickenChunks 1.3.2.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	ComputerCraft{1.53pr1} [ComputerCraft] (ComputerCraft1.53pr1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	CCTurtle{1.53pr1} [ComputerCraft Turtles] (ComputerCraft1.53pr1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	EE3{pre1g (build 4)} [Equivalent Exchange 3] (ee3-universal-pre1g.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	EnderStorage{1.4.2.5} [EnderStorage] (EnderStorage 1.4.2.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	ExtrabiomesXL{3.13.1} [ExtrabiomesXL] (ExtrabiomesXL-universal-1.5.2-3.13.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	Forestry{2.2.2.2} [Forestry for Minecraft] (forestry-A-2.2.2.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	BinnieCore{1.6-pre7} [Binnie Core] (extra-bees-1.6-pre7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	ExtraBees{1.6-pre7} [Extra Bees] (extra-bees-1.6-pre7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	factorization{0.7.37} [Factorization] (Factorization-0.7.37.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	factorization.misc{0.7.37} [Factorization Miscellaneous Nonsense] (Factorization-0.7.37.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	factorization.dimensionalSlice{0.7.37} [Factorization Dimensional Slices] (Factorization-0.7.37.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	FlatSigns{1.2.0} [Flat Signs] (flatsigns-1.5.2-universal-1.2.0.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	iChunUtil{1.0.1} [iChunUtil] (iChunUtil1.0.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	GraviGun{1.5.0.2} [GraviGun] (GravityGun1.5.0v2.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	Hats{1.3.1} [Hats] (Hats1.3.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	HatStand{1.2.0} [HatStand] (HatStand1.2.0.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	inventorytweaks{1.54b} [Inventory Tweaks] (InventoryTweaks-1.54b.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	IronChest{5.2.4.391} [Iron Chest] (ironchest-universal-1.5.1-5.2.4.391.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	MFFS{3.0.0} [Modular Force Field System] (MFFS_v3.0.0.116.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	MiscPeripherals{3.2} [MiscPeripherals] (miscperipherals-3.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	AdvancedSolarPanel{3.3.7} [Advanced Solar Panels] (mod_AdvancedSolarPanels_3_3_7.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	GraviSuite{1.9.2} [Gravitation Suite] (mod_zGraviSuite_1_9_2.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	Natura{1.5.1_2.0.21} [Natura] (Natura_2.0.21.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	neibees{1.2.r25} [NEI Bees Plugin] (neibees-1.5.2-1.2.r25.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	NEIPlugins{1.0.8.6} [NEI Plugins] (NEIPlugins-1.0.8.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	ObsidiPlates{1.4.0} [Obsidian Pressure Plates] (obsidiplates-1.5.2-universal-1.4.0.12.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	PortalGun{1.5.1} [PortalGun] (PortalGun1.5.1.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	SoulShards{1.27} [SoulShards] (SoulShards-v1.27-universal.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	StevesCarts{2.0.0.a110} [Steve's Carts] (StevesCarts2.0.0.a110.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	TConstruct{1.5.1_1.3.3.9} [Tinkers' Construct] (TConstruct_1.3.3.9.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	OmniTools{3.1.2.0} [OmniTools] (OmniTools-3.1.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available
+	LWJGL: 2.4.2
+	OpenGL: AMD Radeon HD 7450 GL version 4.2.12002 Compatibility Profile Context 9.12.0.0, ATI Technologies Inc.
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null

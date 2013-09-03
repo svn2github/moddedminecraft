@@ -1,0 +1,24 @@
+--- 2013-08-30 11:15:05 BST ---
+Rei's Minimap v3.3_06 [1.5.2]
+OS: Windows 8 (amd64) version 6.2
+Java: 1.7.0_21, Oracle Corporation
+VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+LWJGL: 2.4.2
+OpenGL: AMD Radeon HD 7450 version 4.2.12002 Compatibility Profile Context 9.12.0.0, ATI Technologies Inc.
+mainloop runtime exception
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at reifnsk.minimap.ReiMinimap.onTickInGame(ReiMinimap.java:641)
+	at mod_ReiMinimap.onTickInGame(mod_ReiMinimap.java:29)
+	at net.minecraft.src.BaseMod.doTickInGame(BaseMod.java:55)
+	at cpw.mods.fml.common.modloader.BaseModTicker.sendTick(BaseModTicker.java:102)
+	at cpw.mods.fml.common.modloader.BaseModTicker.tickBaseMod(BaseModTicker.java:82)
+	at cpw.mods.fml.common.modloader.BaseModTicker.tickEnd(BaseModTicker.java:56)
+	at cpw.mods.fml.common.SingleIntervalHandler.tickEnd(SingleIntervalHandler.java:34)
+	at cpw.mods.fml.common.FMLCommonHandler.tickEnd(FMLCommonHandler.java:141)
+	at cpw.mods.fml.common.FMLCommonHandler.onRenderTickEnd(FMLCommonHandler.java:377)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:873)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:760)
+	at java.lang.Thread.run(Unknown Source)
+
